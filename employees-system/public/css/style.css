@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI',
+   Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  box-shadow:   0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff;
+}
+
+td.d-flex {
+  display: flex !important;
+  align-items: center;
+}
+
+.alert {
+  border-radius: 8px;
+} 

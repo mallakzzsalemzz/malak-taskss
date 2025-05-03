@@ -1,0 +1,16 @@
+1-> Crud Javascript Oop + Todo List Jquery 
+2-> clean blog (start bootstrap) 
+3-> node express mongodb ejs crud operation => employees
+id  name address salary gender 
+4-> crud Api => Test Postman 
+5-> Weather App (React) Movie App (React) 
+- React Crud = Email-js
+6- Quiz Javascript Advanced Quiz 
+
+EndPoints
+GET   http://localhost:5000/api/v1/posts
+POST   http://localhost:5000/api/v1/posts
+GET     http://localhost:5000/api/v1/posts/:id
+PATCH    http://localhost:5000/api/v1/posts/:id
+PUT    http://localhost:5000/api/v1/posts/:id
+DELETE http://localhost:5000/api/v1/posts/:id

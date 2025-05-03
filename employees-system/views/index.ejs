@@ -1,0 +1,36 @@
+<h1 class="mb-4">Employees</h1>
+<a href="/employees/add" class="btn btn-primary mb-3">Add New Employee</a>
+
+<% if (employees.length > 0) { %>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Salary</th>
+          <th>Gender</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% employees.forEach(employee => { %>
+          <tr>
+            <td><%= employee.name %></td>
+            <td><%= employee.address %></td>
+            <td>$<%= employee.salary.toLocaleString() %></td>
+            <td><%= employee.gender %></td>
+            <td class="d-flex">
+              <a href="/employees/edit/<%= employee._id %>" class="btn btn-sm btn-info mr-2">Edit</a>
+              <form action="/employees/<%= employee._id %>?_method=DELETE" method="POST">
+                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this employee?')">Delete</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+<% } else { %>
+  <div class="alert alert-info">No employees found</div>
+<% } %> 
